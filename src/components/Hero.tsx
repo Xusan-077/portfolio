@@ -7,8 +7,9 @@ export default function () {
   return (
     <section id="home">
       <div className="container">
-        <div className="flex items-center mt-30 gap-8 mb-38">
-          <div className="">
+        <div className="flex items-center pt-40 gap-8 mb-38">
+          <div className="relative">
+            <div className="absolute top-0 left-0 w-150 h-150 opacity-8 bg-[#FD6F00] rounded-full blur-[120px] -z-10"></div>
             <div className="mb-6">
               <span className="block text-[24px] font-semibold text-[#707070]">
                 Hi I am

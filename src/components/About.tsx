@@ -50,11 +50,12 @@ export default function About() {
   return (
     <section id="about" className="">
       <div className="container">
-        <div className="mb-38">
+        <div className="pt-8 mb-30">
           <div className="flex flex-col items-center mb-10">
             <h2 className="text-[40px] font-bold text-[#FEFEFE]">About Me</h2>
-            <p className="text-[20px] font-medium text-[#707070]">
-              Frontend Developer with a strong background in UI/UX Design
+            <p className="text-[20px] font-medium text-[#707070] max-w-137.5 text-center">
+              Front-End Developer with a strong focus on building clean,
+              responsive, and user-friendly interfaces.
             </p>
           </div>
           <div className="flex items-center justify-between mb-25">
@@ -66,7 +67,23 @@ export default function About() {
             </div>
             <div className="">
               <p className="text-[20px] max-w-155 font-medium text-[#959595] mb-10">
-               A Front end developer 
+                Hi, I’m Xusan Yarashov, a Front-End Developer. I studied web
+                development at PDP School, where I built a strong foundation in
+                modern front-end technologies. After that, I continued my
+                education at Tajot Ta’lim, further enhancing my practical skills
+                through real-world projects.
+                <br />
+                <br />
+                Currently, I am working as a Junior Front-End Developer,
+                specializing in building responsive, user-friendly, and
+                high-performance web applications. I have hands-on experience
+                with HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, React,
+                Next.js, and React Native.
+                <br />
+                <br />I am passionate about writing clean, maintainable code,
+                following best practices, and continuously learning new
+                technologies to improve my development skills and deliver better
+                user experiences.
               </p>
               <button className="flex items-center rounded-lg p-[12px_30px] bg-gradient-to-r from-[#FD6F00] to-[#E46400]">
                 <img src={downloadIcon} alt="" />

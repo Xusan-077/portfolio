@@ -80,7 +80,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="">
       <div className="container">
-        <div className="mb-38">
+        <div className="pt-8 mb-30">
           <div className="">
             <h2 className="text-[#FEFEFE] text-[40px] font-bold mb-10 text-center">
               Portfolio

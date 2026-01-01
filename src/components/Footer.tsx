@@ -4,38 +4,19 @@ import instagramIcon from "../assets/icons/instagram.svg";
 import mailIcon from "../assets/icons/mail.svg";
 import phoneIcon from "../assets/icons/phone.svg";
 import { NavHashLink } from "react-router-hash-link";
-
-interface Inav {
-  label: string;
-  link: string;
-}
+import { navLinks } from "../constants/nav";
 
 export default function Footer() {
-  const nav: Inav[] = [
-    {
-      label: "Home",
-      link: "/#home",
-    },
-    {
-      label: "About me",
-      link: "/#about",
-    },
-    {
-      label: "Portfolio",
-      link: "/#portfolio",
-    },
-  ];
-
   return (
     <footer className="bg-[#1B1B1BFF]">
       <div className="container">
         <div className="flex flex-col items-center  p-[40px_0]">
           <h2 className="text-[30px] font-bold bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent">
-            Logo
+            XY.dev
           </h2>
 
           <nav className="flex items-center m-[10px_0]">
-            {nav.map((el, index) => (
+            {navLinks.map((el, index) => (
               <NavHashLink
                 smooth
                 key={index}
