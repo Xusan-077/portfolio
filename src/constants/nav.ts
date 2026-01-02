@@ -17,7 +17,7 @@ export const navLinks: Inav[] = [
     link: "/#portfolio",
   },
   {
-    label: "Contact us",
+    label: "Contact me",
     link: "/#contact",
   },
 ];

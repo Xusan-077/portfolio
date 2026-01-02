@@ -3,11 +3,37 @@
 body {
     background-color: #121212FF;
     font-family: "Nunito Sans", sans-serif;
-    margin-top: 100px;
 }
 
 .container {
     max-width: 1320px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-8px);
+    }
+
+    50% {
+        transform: translateX(8px);
+    }
+
+    75% {
+        transform: translateX(-8px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.error-shake {
+    border: 2px solid #ff4d4d !important;
+    animation: shake 0.3s ease-in-out;
 }

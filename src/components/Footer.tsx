@@ -10,12 +10,12 @@ export default function Footer() {
   return (
     <footer className="bg-[#1B1B1BFF]">
       <div className="container">
-        <div className="flex flex-col items-center  p-[40px_0]">
+        <div className="flex flex-col items-center p-[40px_0]">
           <h2 className="text-[30px] font-bold bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent">
             XY.dev
           </h2>
 
-          <nav className="flex items-center m-[10px_0]">
+          <nav className="flex flex-wrap max-[350px]:flex-col justify-center items-center m-[10px_0]">
             {navLinks.map((el, index) => (
               <NavHashLink
                 smooth
@@ -44,16 +44,16 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex gap-10">
+          <div className="flex gap-10 flex-wrap justify-center">
             <div className="flex gap-3">
-              <img src={mailIcon} alt="" />
-              <span className="text-[20px] font-bold text-[#959595]">
+              <img className="w-6 h-6" src={mailIcon} alt="" />
+              <span className="text-[20px] max-[425px]:text-[16px] font-bold text-[#959595]">
                 xusanyarashov1@gmail.com
               </span>
             </div>
             <div className="flex gap-3">
-              <img src={phoneIcon} alt="" />
-              <span className="text-[20px] font-bold text-[#959595]">
+              <img className="w-6 h-6" src={phoneIcon} alt="" />
+              <span className="text-[20px] max-[425px]:text-[16px] font-bold text-[#959595]">
                 +998 93 164 03 49
               </span>
             </div>

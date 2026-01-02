@@ -6,7 +6,7 @@ interface Props {
   percentage: number;
 }
 
-function CircularSkill({ name, percentage }: Props) {
+export default function CircularSkill({ name, percentage }: Props) {
   return (
     <div className="flex flex-col items-center">
       <div className="w-24 h-24 mb-4">
@@ -25,5 +25,3 @@ function CircularSkill({ name, percentage }: Props) {
     </div>
   );
 }
-
-export default CircularSkill;

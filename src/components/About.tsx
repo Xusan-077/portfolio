@@ -48,9 +48,9 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="">
+    <section id="about" className="scroll-mt-30">
       <div className="container">
-        <div className="pt-8 mb-30">
+        <div className="mb-30 max-[768px]:mb-25">
           <div className="flex flex-col items-center mb-10">
             <h2 className="text-[40px] font-bold text-[#FEFEFE]">About Me</h2>
             <p className="text-[20px] font-medium text-[#707070] max-w-137.5 text-center">
@@ -58,15 +58,9 @@ export default function About() {
               responsive, and user-friendly interfaces.
             </p>
           </div>
-          <div className="flex items-center justify-between mb-25">
-            <div className="relative">
-              <div className="absolute top-0 left-0">
-                <img className=" w-138 h-200" src={person} alt="" />
-              </div>
-              <div className="bg-[#1B1B1BFF] w-138 h-200 rounded-t-[40%]"></div>
-            </div>
-            <div className="">
-              <p className="text-[20px] max-w-155 font-medium text-[#959595] mb-10">
+          <div className="max-[1024px]:block flex items-center justify-between mb-25 gap-10">
+            <div className="max-[1024px]:mb-20">
+              <p className="text-[20px] max-[1024px]:max-w-full max-w-155 font-medium text-[#959595] mb-10">
                 Hi, I’m Xusan Yarashov, a Front-End Developer. I studied web
                 development at PDP School, where I built a strong foundation in
                 modern front-end technologies. After that, I continued my
@@ -85,22 +79,24 @@ export default function About() {
                 technologies to improve my development skills and deliver better
                 user experiences.
               </p>
-              <button className="flex items-center rounded-lg p-[12px_30px] bg-gradient-to-r from-[#FD6F00] to-[#E46400]">
-                <img src={downloadIcon} alt="" />
-                <span className="text-white ml-2.5 block text-[20px] font-bold">
-                  Download CV
-                </span>
-              </button>
+              <div className="max-[1024px]:flex max-[1024px]:justify-end">
+                <button className="flex items-center rounded-lg p-[12px_30px] bg-gradient-to-r from-[#FD6F00] to-[#E46400]">
+                  <img src={downloadIcon} alt="" />
+                  <span className="text-white ml-2.5 block text-[20px] font-bold">
+                    Download CV
+                  </span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="grid grid-cols-9">
-            {percentages.map((el, index) => (
-              <SkillBar
-                key={`${index}-${el.name}`}
-                name={el.name}
-                percentage={el.percentage}
-              />
-            ))}
+            <div className="grid grid-cols-4 gap-8 max-[1024px]:grid-cols-3 max-[425px]:grid-cols-2 max-[1024px]:gap-4">
+              {percentages.map((el, index) => (
+                <SkillBar
+                  key={`${index}-${el.name}`}
+                  name={el.name}
+                  percentage={el.percentage}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
