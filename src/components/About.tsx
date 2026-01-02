@@ -61,18 +61,75 @@ export default function About() {
           <div className="max-[1024px]:block flex items-center justify-between mb-25 gap-10">
             <div className="max-[1024px]:mb-20">
               <p className="text-[20px] max-[1024px]:max-w-full max-w-155 font-medium text-[#959595] mb-10">
-                Hi, I’m Xusan Yarashov, a Front-End Developer. I studied web
-                development at PDP School, where I built a strong foundation in
-                modern front-end technologies. After that, I continued my
-                education at Tajot Ta’lim, further enhancing my practical skills
-                through real-world projects.
+                Hi, I’m Xusan Yarashov, a Front-End Developer. I studied one
+                year web development at{" "}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit to pdp school website`}
+                  href="https://school.pdp.uz"
+                  className="bg-gradient-to-r font-semibold from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer"
+                >
+                  PDP School
+                </a>
+                , where I built a strong foundation in modern front-end
+                technologies. After that, I continued my education at{" "}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit to najottalim website`}
+                  href="https://najottalim.uz"
+                  className="bg-gradient-to-r font-semibold from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer"
+                >
+                  Tajot Ta’lim
+                </a>
+                , further enhancing my practical skills through real-world
+                projects.
                 <br />
                 <br />
-                Currently, I am working as a Junior Front-End Developer,
-                specializing in building responsive, user-friendly, and
+                Currently, I am working as a{" "}
+                <span className="bg-gradient-to-r font-semibold from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  Junior Front-End Developer
+                </span>{" "}
+                , specializing in building responsive, user-friendly, and
                 high-performance web applications. I have hands-on experience
-                with HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, React,
-                Next.js, and React Native.
+                with{" "}
+                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  HTML
+                </span>{" "}
+                ,{" "}
+                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  CSS
+                </span>{" "}
+                ,{" "}
+                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  Sass
+                </span>{" "}
+                ,{" "}
+                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  Bootstrap
+                </span>{" "}
+                ,
+                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  JavaScript
+                </span>{" "}
+                ,{" "}
+                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  TypeScript
+                </span>{" "}
+                ,{" "}
+                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  React
+                </span>{" "}
+                ,{" "}
+                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  Next.js
+                </span>{" "}
+                , and{" "}
+                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
+                  React Native
+                </span>{" "}
+                .
                 <br />
                 <br />I am passionate about writing clean, maintainable code,
                 following best practices, and continuously learning new
