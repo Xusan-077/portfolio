@@ -35,7 +35,12 @@ export default function Contact() {
 
   const sendEmail = (data: any) => {
     emailjs
-      .send("service_42yfqxp", "template_i83tc1h", data, "0U920l3Dk5Daen-m-")
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        data,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
       .then(() => {
         formRef.current?.reset();
         toast.success("Xabar muvaffaqiyatli yuborildi!");
