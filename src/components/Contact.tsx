@@ -10,17 +10,17 @@ export default function Contact() {
 
   const schema = yup
     .object({
-      name: yup.string().required("Ismingizni kiriting"),
+      name: yup.string().required("Enter your name"),
       email: yup
         .string()
-        .email("To'g'ri email kiriting")
-        .matches(/@gmail\.com$/, "Faqat @gmail.com ruxsat etiladi")
-        .required("Email shart"),
-      phone: yup.string().required("Telefon raqam shart"),
+        .email("Please enter a valid email.")
+        .matches(/@gmail\.com$/, "Only @gmail.com is allowed")
+        .required("Email is required"),
+      phone: yup.string().required("Phone number is required"),
       details: yup
         .string()
-        .required("Xabarni yozing")
-        .min(10, "Kamida 10 ta belgi bo'lishi kerak"),
+        .required("Write the message")
+        .min(10, "Must be at least 10 characters long"),
     })
     .required();
 
@@ -57,7 +57,7 @@ export default function Contact() {
   };
 
   const inputClass = (errorName: any) => `
-    bg-[#1B1B1BFF] w-full outline-none pl-6 rounded-lg placeholder:text-[#959595] text-gray-300 border transition-all duration-300
+    bg-[#1B1B1BFF] w-full outline-none pl-6 rounded-lg placeholder:text-[#707070] text-gray-300 border transition-all duration-300
     ${
       errorName
         ? "error-shake border-red-500 shadow-[0_0_10px_rgba(239,68,68,0.2)]"

@@ -1,4 +1,4 @@
-import { NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { NavLinks } from "../constants";
 import { useEffect, useState, useRef } from "react";
 
@@ -11,7 +11,6 @@ export default function Header() {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
 
-      // Agar burger menyu ochiq bo'lsa, header yashirinmasligi kerak
       if (burgerShown) return;
 
       if (currentScroll > lastScroll.current && currentScroll > 100) {
@@ -40,14 +39,14 @@ export default function Header() {
 
           <nav className="hidden md:block">
             {NavLinks.map((el, index) => (
-              <NavHashLink
+              <HashLink
                 smooth
                 key={index}
                 to={el.link}
                 className="text-[#959595] px-6 transition-all duration-300 cursor-pointer text-[20px] font-medium hover:text-[#FD6F00]"
               >
                 {el.label}
-              </NavHashLink>
+              </HashLink>
             ))}
           </nav>
 
@@ -83,15 +82,14 @@ export default function Header() {
         >
           <nav className="flex flex-col py-4">
             {NavLinks.map((el, index) => (
-              <NavHashLink
+              <HashLink
+                smooth
                 key={index}
                 to={el.link}
-                smooth
-                onClick={() => setBurgerShown(false)}
-                className="text-[#959595] text-center p-5 transition-all duration-300 text-[20px] font-medium hover:text-[#FD6F00] hover:bg-[#252525]"
+                className="text-[#959595] px-6 transition-all duration-300 cursor-pointer text-[20px] font-medium hover:text-[#FD6F00]"
               >
                 {el.label}
-              </NavHashLink>
+              </HashLink>
             ))}
           </nav>
         </div>

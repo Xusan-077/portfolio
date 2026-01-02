@@ -52,7 +52,8 @@ export default function About() {
         <div className="mb-30 max-[768px]:mb-25">
           <div className="flex flex-col items-center mb-10">
             <h2 className="text-[40px] font-bold text-[#FEFEFE]">About Me</h2>
-            <p className="text-[20px] font-medium text-[#707070] max-w-137.5 text-center">
+            <p className="text-[20px] font-medium text-[#4B4B4B] max-w-137.5 text-center">
+              {" "}
               Front-End Developer with a strong focus on building clean,
               responsive, and user-friendly interfaces.
             </p>
