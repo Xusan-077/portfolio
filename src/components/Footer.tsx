@@ -1,6 +1,6 @@
 import mailIcon from "../assets/icons/mail.svg";
 import phoneIcon from "../assets/icons/phone.svg";
-import { NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { NavLinks, SocialMedia } from "../constants";
 import SocialMediaLink from "./SocialMediaLink";
 
@@ -15,7 +15,7 @@ export default function Footer() {
 
           <nav className="flex flex-wrap max-[350px]:flex-col justify-center items-center m-[10px_0]">
             {NavLinks.map((el, index) => (
-              <NavHashLink
+              <HashLink
                 smooth
                 key={index}
                 to={el.link}
@@ -25,7 +25,7 @@ export default function Footer() {
                     : ""} text-[#959595] p-[20px_30px] transition-all duration-300 cursor-pointer  text-[20px] font-medium  hover:text-[#FD6F00]`}
               >
                 {el.label}
-              </NavHashLink>
+              </HashLink>
             ))}
           </nav>
 

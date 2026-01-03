@@ -46,13 +46,19 @@ export default function About() {
     },
   ];
 
+  const style =
+    "bg-gradient-to-r font-semibold from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer";
+
+  const style2 =
+    "bg-gradient-to-r font-semibold from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent";
+
   return (
     <section id="about" className="scroll-mt-30">
       <div className="container">
         <div className="mb-30 max-[768px]:mb-25">
           <div className="flex flex-col items-center mb-10">
             <h2 className="text-[40px] font-bold text-[#FEFEFE]">About Me</h2>
-            <p className="text-[20px] font-medium text-[#4B4B4B] max-w-137.5 text-center">
+            <p className="text-[20px] font-medium text-gray-400 max-w-137.5 text-center">
               {" "}
               Front-End Developer with a strong focus on building clean,
               responsive, and user-friendly interfaces.
@@ -68,7 +74,7 @@ export default function About() {
                   rel="noopener noreferrer"
                   aria-label={`Visit to pdp school website`}
                   href="https://school.pdp.uz"
-                  className="bg-gradient-to-r font-semibold from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer"
+                  className={style}
                 >
                   PDP School
                 </a>
@@ -79,7 +85,7 @@ export default function About() {
                   rel="noopener noreferrer"
                   aria-label={`Visit to najottalim website`}
                   href="https://najottalim.uz"
-                  className="bg-gradient-to-r font-semibold from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer"
+                  className={style}
                 >
                   Tajot Ta’lim
                 </a>
@@ -88,48 +94,18 @@ export default function About() {
                 <br />
                 <br />
                 Currently, I am working as a{" "}
-                <span className="bg-gradient-to-r font-semibold from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  Junior Front-End Developer
-                </span>{" "}
-                , specializing in building responsive, user-friendly, and
+                <span className={style2}>Junior Front-End Developer</span> ,
+                specializing in building responsive, user-friendly, and
                 high-performance web applications. I have hands-on experience
-                with{" "}
-                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  HTML
-                </span>{" "}
-                ,{" "}
-                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  CSS
-                </span>{" "}
-                ,{" "}
-                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  Sass
-                </span>{" "}
-                ,{" "}
-                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  Bootstrap
-                </span>{" "}
-                ,
-                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  JavaScript
-                </span>{" "}
-                ,{" "}
-                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  TypeScript
-                </span>{" "}
-                ,{" "}
-                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  React
-                </span>{" "}
-                ,{" "}
-                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  Next.js
-                </span>{" "}
-                , and{" "}
-                <span className="bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent cursor-pointer">
-                  React Native
-                </span>{" "}
-                .
+                with <span className={style2}>HTML</span> ,{" "}
+                <span className={style2}>CSS</span> ,{" "}
+                <span className={style2}>Sass</span> ,{" "}
+                <span className={style2}>Bootstrap</span> ,
+                <span className={style2}>JavaScript</span> ,{" "}
+                <span className={style2}>TypeScript</span> ,{" "}
+                <span className={style2}>React</span> ,{" "}
+                <span className={style2}>Next.js</span> , and{" "}
+                <span className={style2}>React Native</span> .
                 <br />
                 <br />I am passionate about writing clean, maintainable code,
                 following best practices, and continuously learning new

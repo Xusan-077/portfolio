@@ -73,7 +73,7 @@ export default function Contact() {
             <h2 className="text-3xl md:text-[40px] font-bold text-[#FEFEFE] mb-4">
               Contact Me
             </h2>
-            <p className="text-base md:text-[20px] font-medium text-[#707070] max-w-2xl">
+            <p className="text-base md:text-[20px] font-medium text-gray-400 max-w-2xl">
               Cultivating Connections: Reach Out and Connect with Me
             </p>
           </div>

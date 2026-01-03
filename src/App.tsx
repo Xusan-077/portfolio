@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
 import { useEffect, useState } from "react";
 import AOS from "aos";
+import { NativeMouseBlur } from "./components/Mouse";
 
 export default function App() {
   const [scroll, setScroll] = useState<number>(0);
@@ -69,6 +70,7 @@ export default function App() {
         </svg>
       </div>
 
+      <NativeMouseBlur />
       <ToastContainer
         position="top-right"
         autoClose={3000}
